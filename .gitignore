@@ -1,0 +1,13 @@
+mediafiles
+venv
+
+*.sqlite3
+
+Frontend/dist
+Frontend/node_modules
+Frontend/public
+Frontend/*.local
+
+.env
+Frontend/.env.*
+
