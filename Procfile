@@ -1,2 +1,1 @@
-release: ./release_tasks.sh
-web: gunicorn Website.wsgi
+web: python manage.py makemigrations && python manage.py migrate --run-syncdb && python manage.py collectstatic && gunicorn Website.wsgi
