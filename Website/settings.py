@@ -72,11 +72,11 @@ if DEBUG:
 else:
     CORS_ALLOWED_ORIGINS = [
     'https://saifchan.online/',
-    'website-production-3af6.up.railway.app'
+    'https://website-production-3af6.up.railway.app/'
     ]
     CSRF_TRUSTED_ORIGINS = [
     'https://saifchan.online/',
-    'website-production-3af6.up.railway.app'
+    'https://website-production-3af6.up.railway.app/'
     ]
 
 CORS_ALLOW_METHODS = (
