@@ -17,9 +17,12 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['saifchan.online', '*']
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['saifchan.online', 'website-production-3af6.up.railway.app']
 
 
 # Application definition
@@ -65,6 +68,15 @@ if DEBUG:
     'http://localhost:5173',
     'http://127.0.0.1:8000',
     'http://localhost:8000'
+    ]
+else:
+    CORS_ALLOWED_ORIGINS = [
+    'https://saifchan.online/',
+    'website-production-3af6.up.railway.app'
+    ]
+    CSRF_TRUSTED_ORIGINS = [
+    'https://saifchan.online/',
+    'website-production-3af6.up.railway.app'
     ]
 
 CORS_ALLOW_METHODS = (
