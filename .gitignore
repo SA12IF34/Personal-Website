@@ -1,8 +1,8 @@
 venv
 
-mediafiles/*
-!mediafiles/desktopApps
-!mediafiles/portfolio
+# mediafiles/*
+# !mediafiles/desktopApps
+# !mediafiles/portfolio
 
 *.sqlite3
 
