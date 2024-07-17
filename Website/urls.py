@@ -10,7 +10,7 @@ urlpatterns = [
     path('apis/', include('app.urls'))
 
 
-]+static(settings.STATICFILES_DIRS[1], document_root=settings.STATIC_ROOT)
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 REACT_ROUTES = [
     'skills',

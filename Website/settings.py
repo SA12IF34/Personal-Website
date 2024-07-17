@@ -17,12 +17,12 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-if DEBUG:
-    ALLOWED_HOSTS = []
-else:
-    ALLOWED_HOSTS = ['saifchan.online', 'website-production-3af6.up.railway.app']
+# if DEBUG:
+#     ALLOWED_HOSTS = []
+# else:
+ALLOWED_HOSTS = ['saifchan.online', 'website-production-3af6.up.railway.app']
 
 
 # Application definition
@@ -56,28 +56,28 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Website.urls'
 
-if DEBUG:
-    CORS_ALLOWED_ORIGINS = [
-    'http://127.0.0.1:3000',
-    'http://localhost:5173',
-    'http://127.0.0.1:8000',
-    'http://localhost:8000'
-    ]
-    CSRF_TRUSTED_ORIGINS = [
-    'http://127.0.0.1:3000',
-    'http://localhost:5173',
-    'http://127.0.0.1:8000',
-    'http://localhost:8000'
-    ]
-else:
-    CORS_ALLOWED_ORIGINS = [
-    'https://saifchan.online',
-    'https://website-production-3af6.up.railway.app'
-    ]
-    CSRF_TRUSTED_ORIGINS = [
-    'https://saifchan.online',
-    'https://website-production-3af6.up.railway.app'
-    ]
+# if DEBUG:
+#     CORS_ALLOWED_ORIGINS = [
+#     'http://127.0.0.1:3000',
+#     'http://localhost:5173',
+#     'http://127.0.0.1:8000',
+#     'http://localhost:8000'
+#     ]
+#     CSRF_TRUSTED_ORIGINS = [
+#     'http://127.0.0.1:3000',
+#     'http://localhost:5173',
+#     'http://127.0.0.1:8000',
+#     'http://localhost:8000'
+#     ]
+# else:
+CORS_ALLOWED_ORIGINS = [
+'https://saifchan.online',
+'https://website-production-3af6.up.railway.app'
+]
+CSRF_TRUSTED_ORIGINS = [
+'https://saifchan.online',
+'https://website-production-3af6.up.railway.app'
+]
 
 CORS_ALLOW_METHODS = (
     "DELETE",
@@ -133,7 +133,7 @@ WSGI_APPLICATION = 'Website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if DEBUG:
+if not DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
