@@ -2,9 +2,16 @@ import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../assets/logo.png';
 
+import MoreSide from '../components/MoreSide';
+
 function Home() {
 
   const [morePos, setMorePos] = useState(false); // true: top | false: bottom
+
+  function handleShowMore() {
+    document.querySelector('.more-ele').classList.add('show');
+    return;
+  }
 
   var num = 0;
   useEffect(() => {
@@ -62,9 +69,11 @@ function Home() {
           </div>
         </div>
       </main>
-      <button className={`more-btn ${morePos ? 'top' : 'bottom'}`}>
+      <button onClick={handleShowMore} className={`more-btn ${morePos ? 'top' : 'bottom'}`}>
         more..
       </button>
+
+      <MoreSide morePos={morePos} />
     </>
   )
 }

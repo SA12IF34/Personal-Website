@@ -10,6 +10,10 @@ import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
+// The More Pages
+import Logo from './pages/more/Logo';
+import AncientProjects from './pages/more/AncientProjects';
+
 axios.defaults.xsrfCookieName = 'csrftoken';
 axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 
@@ -28,6 +32,9 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/Portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
+
+        <Route path='/more/Logo' element={<Logo />} />
+        <Route path='/more/AncientProjects' element={<AncientProjects />} />
       </Routes>
     </>
   )
