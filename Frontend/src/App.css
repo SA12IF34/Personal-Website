@@ -15,7 +15,7 @@
 
 #root {
   width: 100%;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   min-height: 100vh;
   margin: 0 auto;
   padding: var(--main-padding);
@@ -23,11 +23,22 @@
   overflow: hidden;
 }
 
+.home-page {
+  width: 100%;
+  max-width: none !important;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
+
 .more-ele {
   width: 25vw;
   height: 100vh;
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   box-shadow: 1px 0px 8px 1px silver inset;
@@ -252,7 +263,7 @@ main,
 }
 
 .more-btn {
-  position: absolute;
+  position: fixed;
   right: var(--main-padding);
   background-color: transparent;
   border: none;
@@ -761,6 +772,7 @@ main,
 
   .home-page > .sections-container {
     padding: 0 20px;
+    justify-content: center;
   }
   .home-page > .sections-container .section {
     width: 125px;
@@ -832,5 +844,22 @@ main,
 
   .study-case > div:nth-child(4) {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --main-padding: calc(1280px / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618/ 1.618);
+    --header-height: calc(1280px / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618);
+    --main-margin: var(--header-height);
+
+    /* Size levels in terms of Golden Ratio */
+    --level-8: calc(1280px / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618);
+    --level-7: calc(1280px / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618);
+    --level-6: calc(1280px / 1.618 / 1.618 / 1.618 / 1.618 / 1.618 / 1.618);
+    --level-5: calc(1280px / 1.618 / 1.618 / 1.618 / 1.618 / 1.618);
+
+
+    --seperator-width: calc(1280px / 1.618 / 1.618);
   }
 }
