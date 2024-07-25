@@ -59,7 +59,7 @@ function Contact() {
             <h2>You can contact me over</h2>
             <br />
             <span>Whats app +962799562745</span>
-            <span>Email saifchan@mail.com</span>
+            <span>Email saifchan@mail.com OR mail@saifchan.online</span>
           </div>
 
           <div>
