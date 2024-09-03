@@ -18,7 +18,9 @@ REACT_ROUTES = [
     'portfolio',
     'profession',
     'about',
-    'contact'
+    'contact',
+    'more/Logo',
+    'more/AncientProjects'
 ]
 
 for route in REACT_ROUTES:

@@ -41,7 +41,7 @@ function Profession() {
         </span>
         <div className='profession-content'>
           <p>
-          Mainly, I'm a fullStack web developer and have 3.5 years of experience using my skills and tools. I can proide web related services and applications.
+          Mainly, I'm a fullStack web developer and have 3.5 years of experience using my skills and tools. I can provide web related services and applications.
           </p>
           <p>
           My work domain includes developing web UIs, client side interactions with server, developing the backend, designing databases, developing APIs, deploying web apps, developing and deploying web extensions, maintaining and improving web apps.

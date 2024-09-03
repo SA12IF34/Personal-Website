@@ -360,6 +360,13 @@ main,
   --skills-ele-height: calc(100vw / 1.618 / 1.618 / 1.618 / 1.618);
 }
 
+@media screen and (min-width: 1440px) {
+  .skills-page {
+    --skills-ele-width: calc(1440px / 1.618 / 1.618 / 1.618);
+    --skills-ele-height: calc(1440px / 1.618 / 1.618 / 1.618 / 1.618);
+  }
+}
+
 .skills-content {
   padding-top: var(--main-padding);
   width: 100%;

@@ -39,12 +39,12 @@ function Contact() {
             <br />
             <ul>
               <li>
-                <a href="">
+                <a href="https://github.com/SA12IF34">
                 Github
                 </a>
               </li>
               <li>
-                <a href="">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/saifchan/">LinkedIn</a>
               </li>
               <li>
                 <a href="">Upwork</a>
