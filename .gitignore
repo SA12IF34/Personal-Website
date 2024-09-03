@@ -1,16 +1,16 @@
 venv
 
-# mediafiles/*
-# !mediafiles/desktopApps
-# !mediafiles/portfolio
+mediafiles/*
+!mediafiles/desktopApps
+!mediafiles/portfolio
 
 *.sqlite3
 
-# Frontend/dist
+Frontend/dist
 Frontend/node_modules
-# Frontend/public
-# Frontend/*.local
+Frontend/public
+Frontend/*.local
 
-# .env
-# Frontend/.env.*
+.env
+Frontend/.env.*
 
