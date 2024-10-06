@@ -47,10 +47,10 @@ function Contact() {
                 <a href="https://www.linkedin.com/in/saifchan/">LinkedIn</a>
               </li>
               <li>
-                <a href="">Upwork</a>
+                <a href="https://www.upwork.com/freelancers/~01ef34f2c2b3e1bcb1?mp_source=share">Upwork</a>
               </li>
               <li>
-                <a href="">Medium</a>
+                <a href="https://medium.com/@saifchan">Medium</a>
               </li>
             </ul>
           </div>
@@ -58,8 +58,8 @@ function Contact() {
           <div>
             <h2>You can contact me over</h2>
             <br />
-            <span>Whats app: +962799562745</span>
-            <span>Email: saifchan@mail.com OR mail@saifchan.online</span>
+            <span>Whats app: +962796483509</span>
+            <span>Email: saifchan@mail.com</span>
           </div>
 
           <div>
